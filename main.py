@@ -21,9 +21,9 @@ def merge_sort(array: list):
             array[index] = right.pop(0)
             index += 1
 
-    if len(left):
-        array[index: index + len(left)] = left
-        index += len(left)
+    if size_left := len(left):
+        array[index: index + size_left] = left
+        index += size_left
 
     if len(right):
         array[index:] = right
